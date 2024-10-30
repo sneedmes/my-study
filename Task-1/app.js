@@ -19,7 +19,7 @@ btn.onclick = function (){
     let elem6 = document.getElementById("elem-6").value
     array.push(elem1, elem2, elem3, elem4, elem5, elem6)
     let result = JSON.stringify(countElements(array))
-    document.getElementById("result").innerHTML="<h3>Результат выполнения: " + result + "</h3>"
+    document.getElementById("result").innerHTML="<h3>Результат выполнения: " + result.map(el=>{return el}) + "</h3>"
     array = []
 }
 
