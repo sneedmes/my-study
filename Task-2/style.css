@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+.task-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Comfortaa", sans-serif;
+}
+.form{
+    margin: 10px 300px;
+    width: 300px;
+    display: flex;
+    gap: 500px;
+}
+input::placeholder{
+    color: black;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-family: "Comfortaa", sans-serif;
+    background: linear-gradient(45deg, rgb(236, 157, 110) 0%, rgb(237, 72, 0) 100%);
+}
+#btn, #btn1 {
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-family: "Comfortaa", sans-serif;
+    background: white;
+    cursor: pointer;
+}
+#btn:hover{
+    background: #c0d0f3;
+    transition: background-color, color 0.5s ease-in;
+}

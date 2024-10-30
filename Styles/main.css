@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    font-family: "JetBrains Mono", sans-serif;
+}
+body{
+    background-image: url("../Assets/background.jpg");
+    background-size: 100%;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+}
+button{
+    background-color: rgba(28,28,28,0);
+    width: 200px;
+    height: 100px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    background: none;
+}
