@@ -1,20 +1,20 @@
 const Orders = [
     {
         productName: 'JavaScript Tutorial',
-        productNumber: '16367',
-        paymenStatus: 'Due',
+        productNumber: '1',
+        paymentStatus: 'Due',
         status: 'Pending'
     },
     {
         productName: 'React lessons',
-        productNumber: '11111',
-        paymenStatus: 'Refunded',
+        productNumber: '2',
+        paymentStatus: 'Refunded',
         status: 'Declined'
     },
     {
         productName: 'TypeScript course',
-        productNumber: '78727',
-        paymenStatus: 'Paid',
+        productNumber: '3',
+        paymentStatus: 'Paid',
         status: 'Acting'
     }
 ]
