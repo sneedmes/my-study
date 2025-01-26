@@ -14,20 +14,20 @@ const notes = [
     }
 ]
 
-function render(){
+function render() {
     listElement.innerHTML = ""
     if (notes.length === 0) {
         listElement.innerHTML = '<p>No elements</p>'
     }
-    for (let i=0; i<notes.length; i++){
-        listElement.insertAdjacentHTML('beforeend', getNoteTemplate(notes[i],i))
+    for (let i = 0; i < notes.length; i++) {
+        listElement.insertAdjacentHTML('beforeend', getNoteTemplate(notes[i], i))
     }
 }
 
 render()
 
 createBtn.onclick = function () {
-    if (inputElement.value.length === 0){
+    if (inputElement.value.length === 0) {
         return alert("Write smth in input!")
     }
     const newNote = {
@@ -46,14 +46,14 @@ listElement.onclick = function (event) { // принимает элемент п
 
         if (type === 'toggle') {
             notes[index].completed = !notes[index].completed
-        } else if (type === 'remove'){
+        } else if (type === 'remove') {
             notes.splice(index, 1)
         }
         render()
     }
 }
 
-function getNoteTemplate(note, index){
+function getNoteTemplate(note, index) {
     return `
         <li
           class="list-group-item d-flex justify-content-between align-items-center"
